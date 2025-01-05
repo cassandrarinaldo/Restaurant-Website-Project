@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meny - Maggies Magiska Mat</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" /> 
+        <link href="../images/icon.png" rel="icon" />
+        <meta name="description" content="Läs om restaurangen Maggies Magiska Mat, se menyn, boka bord eller ta kontakt med restaurangen." />
+        <script src="../js/utils.js" type="module"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="../index.html"><h1>Maggies Magiska Mat</h1></a>
+                <a href="../index.html"><p>Vila dina trötta hobbitfötter i stans bästa fantasyrestaurang!</p></a>
+            </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="meny.html">Meny</a></li>
+                <li><a href="bokabord.html">Boka bord</a></li>
+                <li><a href="kontaktaoss.html">Kontakta oss</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+            </ul>
+        </nav>
+
+        <main class="meny">
+            <section id="tables">
+                <h2>Den magiska menyn</h2>
+                <table id="starters">
+                    <caption>Förrätt</caption>
+                    <tr>
+                        <th id="NamnStarter">Namn</th>
+                        <th id="BeskrivningStarter">Beskrivning</th>
+                        <th id="VegetariskStarter">Vegetarisk?</th>
+                        <th id="PrisStarter">Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Förrätt 1</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Ja</td>
+                        <td>42 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Förrätt 2</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Nej</td>
+                        <td>16 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Förrätt 3</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Ja</td>
+                        <td>28 kr</td>
+                    </tr>
+                </table>
+                <picture class="menyBildR">
+                    <source media="(min-width:650px)" srcset="../images/potato_300.jpg" class="menyBildR">
+                    <source media="(min-width:465px)" srcset="../images/potato_200.jpg" class="menyBildR">
+                    <img src="../images/potato_150.jpg" alt="Kokta potatisar i skål" class="menyBildR">
+                </picture>
+                
+                <table id="mainCourse">
+                    <caption>Varmrätt</caption>
+                    <tr>
+                        <th id="NamnMain">Namn</th>
+                        <th id="BeskrivningMain">Beskrivning</th>
+                        <th id="VegetariskMain">Vegetarisk?</th>
+                        <th id="PrisMain">Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Varmrätt 1</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Nej</td>
+                        <td>199 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Varmrätt 2</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Nej</td>
+                        <td>239 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Varmrätt 3</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Ja</td>
+                        <td>159 kr</td>
+                    </tr>
+                </table>
+                <picture class="menyBildL">
+                    <source media="(min-width:650px)" srcset="../images/stew_300.jpg" class="menyBildL">
+                    <source media="(min-width:465px)" srcset="../images/stew_200.jpg" class="menyBildL">
+                    <img src="../images/stew_150.jpg" alt="Köttgryta" class="menyBildL">
+                </picture>
+                <table id="dessert">
+                    <caption>Efterätt</caption>
+                    <tr>
+                        <th id="NamnDessert">Namn</th>
+                        <th id="BeskrivningDessert">Beskrivning</th>
+                        <th id="VegetariskDessert">Vegetarisk?</th>
+                        <th id="PrisDessert">Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Efterätt 1</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Nej</td>
+                        <td>99 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Efterätt 2</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Ja</td>
+                        <td>119 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Efterätt 3</td>
+                        <td>Lorem ipsum...</td>
+                        <td>Ja</td>
+                        <td>79 kr</td>
+                    </tr>
+                </table>
+                <picture class="menyBildR">
+                    <source media="(min-width:650px)" srcset="../images/pancakes_300.jpg" class="menyBildR">
+                    <source media="(min-width:465px)" srcset="../images/pancakes_200.jpg" class="menyBildR">
+                    <img src="../images/pancakes_150.jpg" alt="Pannkakor" class="menyBildR">
+                </picture>
+                <table id="drinks">
+                    <caption>Elixir</caption>
+                    <tr>
+                        <th id="NamnElixir">Namn</th>
+                        <th id="BeskrivningElixir">Beskrivning</th>
+                        <th id="PrisElixir">Pris</th>
+                    </tr>
+                    <tr>
+                        <td id="amortentia">Amortentia</td>
+                        <td id="amortentia-beskrivning">Älska mig!</td>
+                        <td id="amortentia-pris">129 kr</td>
+                    </tr>
+                    <tr>
+                        <td id="drUbbly">Dr Ubbly's Oblivious Unction</td>
+                        <td id="drUbbly-beskrivning">Har dina tankar skadat dig?</td>
+                        <td id="drUbbly-pris">129 kr</td>
+                    </tr>
+                    <tr>
+                        <td id="felixFelicis">Felix Felicis</td>
+                        <td id="felixFelicis-beskrivning">Dags att spela på lotto?</td>
+                        <td id="felixFelicis-pris">129 kr</td>
+                    </tr>
+                    <tr>
+                        <td id="polyjuice">Polyjuice</td>
+                        <td id="polyjuice-beskrivning">Vem kommer du bli?</td>
+                        <td id="polyjuice-pris">129 kr</td>
+                    </tr>
+                    <tr>
+                        <td id="skele-gro">Skele-Gro</td>
+                        <td id="skele-gro-beskrivning">Har du ingen ryggrad?</td>
+                        <td id="skele-gro-pris">129 kr</td>
+                    </tr>
+                    <tr>
+                        <td id="veritaserum">Veritaserum</td>
+                        <td id="veritaserum-beskrivning">Tala sanning nu!</td>
+                        <td id="veritaserum-pris">129 kr</td>
+                    </tr>
+                </table>
+                <picture class="menyBildL">
+                    <source media="(min-width:650px)" srcset="../../images/drink5_300.jpg" class="menyBildL">
+                    <source media="(min-width:465px)" srcset="../../images/drink5_200.jpg" class="menyBildL">
+                    <img src="../images/drink5_150.jpg" alt="Lila drink i glas" class="menyBildL">
+                </picture>
+            </section>
+            <section id= "vilket-elixir">
+                <h2>Elixir-kollen!</h2>
+                <p>Vill du veta mer om ett elixir? Skriv då in vilket elixir du vill veta mer om här nedan och tryck enter.</p>
+                <select name="elixir" id="Elixir"></select>
+                <div class="elixir-resultat"> </div> <!-- end elixir-resultat -->
+                <button id="tabortElixirBarn">Rensa elixir</button>
+                <picture class="menyBildL">
+                    <source media="(min-width:650px)" srcset="../../images/potion_300.jpg" class="menyBild">
+                    <source media="(min-width:465px)" srcset="../../images/potion_200.jpg" class="menyBild">
+                    <img src="../images/potion_150.jpg" alt="Lila elixir i glasflaska" class="menyBild">
+                </picture>
+            </section> <!-- end vilket-elixir -->
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="bokabord.html">Boka bord!</a></li>
+                <li>Lämnar du oss redan? Ha en riktigt fin dag!</li>
+                <li>Maggies Magiska Mat, 2023. Ingen copyright här inte!</li>
+                <li>Bilder från Unsplash.com</li>
+            </ul>
+        </footer>
+    </div><!-- end wrapper -->
+    </body>
+</html>

@@ -1,0 +1,719 @@
+@font-face {
+    font-family: 'Princess Sofia';
+    src: url(/css/fonts/Princess_Sofia/PrincessSofia-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(/css/fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url(/css/fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+/* Generella regler */
+
+html{
+    font-size: 105%;
+}
+
+body{
+    font: 300 1rem/1.375 'Merriweather', Georgia, sans-serif;
+    color: #E4DFEE;
+    background-color: #212A2F;
+}
+
+h2, h3, nav ul, footer ul{
+    font-family: 'Lora', Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+}
+
+h1{
+    font-family: 'Princess Sofia', Georgia, sans-serif;
+    font-size: 3rem;
+    color: #FE9742;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    letter-spacing: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 1rem 1rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    margin: 0 2rem 2rem;
+    font-size: 1rem;
+}
+
+img{
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bakgrundsfärg, bild, viss layout */
+#wrapper{
+  background: url(../images/background.jpg) no-repeat fixed;
+  background-size: cover;
+  padding: 2rem;
+}
+
+/* Header */
+header p{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #E4DFEE;
+}
+
+header a{
+  text-decoration: none;
+}
+
+/* Nav */
+
+nav, footer{
+    background-color: #FE9742;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+nav ul{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+nav ul li a{
+    color: #343333;
+    text-decoration: none;
+    font-style: normal;
+    text-align: center;
+}
+
+nav a:focus, nav a:hover{
+    color: black;
+    font-weight: 900;
+    letter-spacing: 0.15rem;
+}
+
+/* Main */
+
+main{
+  padding: 1rem;
+}
+
+.index{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.index p {
+  text-align: center;
+}
+.index a{
+  color: #E4DFEE;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+#galleri article{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 1rem;
+}
+
+.picRight h3 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.picRight p {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.picRight picture {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  display: inherit;
+  margin: inherit;
+}
+.picLeft h3 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.picLeft p {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.picLeft picture {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#erbjudanden{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#erbjudanden article{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 1rem;
+  margin: auto;
+}
+
+#erbjudanden article h4{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+#erbjudanden img{
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+/* Meny */
+
+.meny{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.meny table caption{
+  font-family: 'Lora', Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+#tables{
+  grid-column: 1/4;
+  grid-row: 1/5;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(5, auto);
+}
+
+#tables h2{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#starters{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#tables img:nth-of-type(1){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#mainCourse{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#tables img:nth-of-type(2){
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#dessert{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+#tables img:nth-of-type(3){
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#drinks{
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+#tables img:nth-of-type(4){
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(161, 77, 8, 0.25);
+}
+
+th{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+td{
+  padding: 1rem;
+}
+
+td:nth-of-type(1){
+  text-align: left;
+  justify-content: space-around;
+}
+
+td:nth-of-type(2){
+  text-align: center;
+}
+
+td:nth-of-type(3){
+  text-align: center;
+}
+
+td:nth-of-type(4){
+  text-align: right;
+}
+
+#drinks td:nth-of-type(3){
+  text-align: right;
+}
+
+/* Elixir */
+
+#vilket-elixir{
+  grid-column: 1/4;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(4,auto);
+}
+
+#vilket-elixir h2{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+#vilket-elixir p{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+#Elixir, #tabortElixirBarn{
+  font-family: 'Lora', Helvetica, sans-serif;
+  font-weight: 900;
+  grid-row: 3/4;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #000000;
+  width: auto;
+}
+
+#Elixir{
+  grid-column: 1/2;
+  background-color: #FE9742;
+}
+#vilket-elixir img{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+#vilket-elixir .elixir-resultat{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#tabortElixirBarn{
+  grid-column: 2/3;
+  background-color: red;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+/* Boka bord */
+
+.bokabord section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 30rem;
+}
+.bokabord p{
+  text-align: center;
+}
+
+input, select, textarea {
+  border: 1px solid #dfdbdb;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #a14d08;
+}
+
+input[type="submit"]{
+  background-color: #2e7403;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+}
+
+input[type="reset"]{
+  background-color: #742103;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline: none;
+  background-color: rgba(220, 143, 50, 0.50);
+}
+
+/* Kontakta oss */
+
+#kontaktaoss{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#kontaktaoss address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #212A2F;
+}
+
+.heading{
+  font-family: 'Lora', Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* Om oss */
+#omoss{
+  display: flex;
+  flex-direction: row;
+}
+
+#omoss article {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3,auto);
+  padding: 1rem;
+}
+
+#omoss article h3 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#omoss article p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#omoss article img {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: inherit;
+  margin: inherit;
+}
+
+
+/* Footer */
+footer ul{
+  color: #343333;
+  text-align: center;
+}
+
+footer ul li a{
+  color: #343333;
+}
+
+/* Media queries */
+@media(min-width: 1000px){
+  #wrapper{
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .meny{
+    padding: 1rem;
+    margin: auto;
+  }
+
+  nav, footer{
+    margin: 1.5rem;
+  }
+
+  #omoss{
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+}
+
+@media(max-width: 1000px){
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #wrapper{
+    padding: 1rem;
+    margin: 0;
+  }
+
+  #erbjudanden, .meny, #tables, #vilket-elixir, #omoss, #omoss article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  #Elixir{
+    margin: 1rem;
+  }
+}
+
+@media(max-width: 700px){
+  nav ul{
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+  }
+}
+
+@media(max-width: 610px){
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.25rem;
+  }
+  h3{
+    font-size: 0.9rem;
+  }
+  h4{
+    font-size: 0.7rem;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #wrapper{
+    padding: 1rem;
+    margin: 0;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  p{
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  nav ul{
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+  }
+
+  .index a{
+    color: #E4DFEE;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+  }
+
+  #galleri article, #erbjudanden, .meny, #tables, #vilket-elixir, #omoss, #omoss article, #kontaktaoss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .meny{
+    padding: 0;
+  }
+
+  #Elixir{
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: rgba(161, 77, 8, 0.25);
+  }
+
+  tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 122, 14, 0.25);
+  }
+
+  #tables tr:nth-of-type(1) {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    padding-top: 0.5rem;
+  }
+
+  #tables td {
+    position: relative;
+    padding-left: 50%;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #tables td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    font-family: "Dosis", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    font-size: 0.8rem;
+  }
+  #tables td:nth-of-type(1):before {
+    content: "Namn";
+  }
+
+  #tables td:nth-of-type(2):before {
+    content: "Beskrivning";
+  }
+
+  #tables td:nth-of-type(3):before {
+    content: "Vegetarisk?";
+  }
+
+  #tables td:nth-of-type(4):before {
+    content: "Pris";
+  }
+
+  #tables td:nth-of-type(1), #tables td:nth-of-type(2), #tables td:nth-of-type(3), #tables td:nth-of-type(4){
+    text-align: right;
+    padding-right: 0.75rem;
+  }
+
+  #drinks td:nth-of-type(3):before {
+    content: "Pris";
+  }
+  .elixir td{
+    text-align: center;
+  }
+
+  .bokabord section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 0;
+    width: 150px;
+  }
+  .bokabord p, .bokabord h2{
+    width: 200px;
+  }
+  textarea, input, select{
+    width: 240px;
+  }
+  input[type="submit"]{
+    background-color: #2e7403;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+  }
+
+  input[type="reset"]{
+    background-color: #742103;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+  }
+
+  .kontaktaoss img{
+  max-width: 200px;
+  }
+
+  #omoss{
+    margin: 0;
+    padding: 0;
+  }
+
+  #omoss article{
+    margin: 1rem 0;
+    padding: 0;
+  }
+}

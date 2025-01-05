@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Boka bord - Maggies Magiska Mat</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" /> 
+        <link href="../images/icon.png" rel="icon" />
+        <meta name="description" content="Läs om restaurangen Maggies Magiska Mat, se menyn, boka bord eller ta kontakt med restaurangen." />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="../index.html"><h1>Maggies Magiska Mat</h1></a>
+                <a href="../index.html"><p>Vila dina trötta hobbitfötter i stans bästa fantasyrestaurang!</p></a>
+            </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="meny.html">Meny</a></li>
+                <li><a href="bokabord.html">Boka bord</a></li>
+                <li><a href="kontaktaoss.html">Kontakta oss</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+            </ul>
+        </nav>
+
+        <main class="bokabord">
+            <section>
+                <h2>Boka ett bord på Maggies Magiska Mat!</h2>
+                <p>Om sällskapet är fler än 10 personer är ni välkomna att mejla eller ringa oss för att boka!</p>
+                
+                <form id="boka" method="post" action="#">
+                    <p>
+                        <label for="FirstName">Förnamn*:</label>
+                        <br>
+                        <input type="text" name="firstname" id="FirstName" required/>
+                    </p>
+                    <p>
+                        <label for="LastName">Efternamn*:</label>
+                        <br>
+                        <input type="text" name="lastname" id="LastName" required/>
+                    </p>
+                    <p>
+                        <label for="Email">E-mail*:</label>
+                        <br>
+                        <input type="email" name="email" id="Email" required pattern="\w+@\w+.+\w"/>
+                    </p>
+                    <p>
+                        <label for="Phone">Telefon*:</label>
+                        <br>
+                        <input type="tel" name="phone" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="XXX-XXX-XXXX" required/>
+                    </p>
+                    <p>
+                        <label for="Reservation">Datum*:</label>
+                        <br>
+                        <input type="date" name="reservation" id="Reservation" required/>
+                    </p>
+                    <p>
+                        <label for="Guests">Antal personer*:</label>
+                        <br>
+                        <select name="guests" id="Guests" required>
+                            <option value="">Välj antal...</option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                            <option value="eight">8</option>
+                            <option value="nine">9</option>
+                            <option value="ten">10</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Comments">Kommentar:</label>
+                        <br>
+                        <textarea name="comments" rows="5" cols="30" id="Comments"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Slutför bokning" onclick="alert('Den här funktionen är inte byggd än! Testa någon annan funktion på hemsidan!')" />
+                        <input type="reset" value="Rensa formulär" />
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="bokabord.html">Boka bord!</a></li>
+                <li>Lämnar du oss redan? Ha en riktigt fin dag!</li>
+                <li>Maggies Magiska Mat, 2023. Ingen copyright här inte!</li>
+                <li>Bilder från Unsplash.com</li>
+            </ul>
+        </footer>
+    </div><!-- end wrapper -->
+    </body>
+</html>
